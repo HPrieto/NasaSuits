@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 // Import Components
 import Home from './Components/Home.js';
-import Navbar from './Components/Navbar.js';
 
 class App extends Component {
     componenetWillMount() {
@@ -12,9 +11,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
                 <Home/>
-                <div>hello</div>
             </div>
         )
     }

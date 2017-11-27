@@ -985,10 +985,6 @@ var _Home = __webpack_require__(28);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Navbar = __webpack_require__(33);
-
-var _Navbar2 = _interopRequireDefault(_Navbar);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1020,13 +1016,7 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_Navbar2.default, null),
-                _react2.default.createElement(_Home2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    'hello'
-                )
+                _react2.default.createElement(_Home2.default, null)
             );
         }
     }]);
@@ -18343,7 +18333,7 @@ module.exports = camelize;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18363,22 +18353,113 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_Component) {
-    _inherits(Home, _Component);
+  _inherits(Home, _Component);
 
-    function Home() {
-        _classCallCheck(this, Home);
+  function Home() {
+    _classCallCheck(this, Home);
 
-        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+  }
+
+  _createClass(Home, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { id: 'nav' },
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: '#' },
+              'Members'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: '#' },
+              'Mission'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { 'class': 'link-active', href: '#' },
+              'Home'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'about.html' },
+              'About'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: '#' },
+              'Support'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'video',
+          { autoplay: true, loop: true, id: 'video-background', muted: true, 'plays-inline': true },
+          _react2.default.createElement('source', { src: './background-video/video.mov', type: 'video/mp4' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { id: 'jumbotron' },
+          _react2.default.createElement(
+            'h1',
+            { id: 'jumbotron-header' },
+            'NASA SUITS'
+          ),
+          _react2.default.createElement(
+            'p',
+            { id: 'jumbotron-subtext' },
+            'Welcome to our team\'s website'
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'about.html' },
+              _react2.default.createElement(
+                'button',
+                { type: 'button', name: 'button' },
+                'Learn More ',
+                _react2.default.createElement('i', { 'class': 'fa fa-space-shuttle', 'aria-hidden': 'true' }),
+                ' '
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'footer',
+          null,
+          'Here\'s the footer'
+        )
+      );
     }
+  }]);
 
-    _createClass(Home, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement('div', { className: 'container home-container' });
-        }
-    }]);
-
-    return Home;
+  return Home;
 }(_react.Component);
 
 exports.default = Home;
@@ -18392,7 +18473,7 @@ exports = module.exports = __webpack_require__(30)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n    color: white;\n}\n", ""]);
+exports.push([module.i, "body {\n    color: white;\n}\n\nbody{\n  margin: 0;\n}\n\n@font-face {\n  font-family: 'NasalizationRg-Regular';\n  font-style: normal;\n  font-weight: normal;\n  src: local('NasalizationRg-Regular'), url('/fonts/nasalization rg.woff') format('woff');\n}\n\n#nav{\n  padding-top: 15px;\n  width:100%;\n  text-align:center;\n  height: 65px;\n\n /*background gradient*/\n background:rgba(0,0,0,.7);\n background: -moz-linear-gradient(top, rgba(0,0,0,0.40) 4%, rgba(0,0,0,0) 100%); /* FF3.6-15 */\n background: -webkit-linear-gradient(top, rgba(0,0,0,0.40) 4%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */\n background: linear-gradient(to bottom, rgba(0,0,0,0.40) 4%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\n filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */\n}\n\n#nav span a{\n  font-family: \"Work Sans\";\n  font-weight: 300;\n  color: #FFFFFF;\n  text-decoration:none;\n  font-size: 20px;\n  margin: 10px;\n  padding-bottom: 5px;\n  transition-duration: .3s;\n}\n\n#nav span .link-active{\n  color: #df462a;\n  -webkit-box-shadow: 0 8px 6px -7px #df462a;\n  -moz-box-shadow: 0 8px 6px -7px #df462a;\n  box-shadow: 0 8px 6px -7px #df462a;\n  border-radius: 8px;\n}\n\n#nav span a:hover:not(.link-active){\n    -webkit-box-shadow: 0 8px 6px -7px #FFFFFF;\n    -moz-box-shadow: 0 8px 6px -7px #FFFFFF;\n    box-shadow: 0 8px 6px -7px #FFFFFF;\n    border-radius: 8px;\n    transition-duration: .3s;\n}\n\n#jumbotron{\n  text-align: center;\n  margin: 0 auto;\n  margin-top: 13%;\n}\n\n#jumbotron-header{\n  font-family: \"NasalizationRg-Regular\";\n  font-size: 100px;\n  color: #df462a;\n  text-shadow: 2px 2px .8px rgba(0, 0, 0, 0.33);\n  line-height: 10px;\n  margin-bottom: 55px;\n}\n\n#jumbotron-subtext{\n  font-family: \"Work Sans\";\n  font-size: 38px;\n  font-weight: 200;\n  color: #FFFFFF;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.73);\n  margin: 0;\n}\n\nbutton{\n  font-family: 'Work Sans';\n  font-weight: bold;\n  font-size: 18px;\n  color: #CECECE;\n  padding: 13px;\n  margin-top: 18px;\n  background-color: rgba(77, 77, 77, 0.36);\n  border: none;\n  border-radius: 7px;\n  transition-duration: .3s;\n  outline: none;\n  cursor: pointer;\n}\n\nbutton:hover{\n  color: #F3F3F3;\n  -moz-box-shadow:    inset 0 0 10px #FFFFFF;\n   -webkit-box-shadow: inset 0 0 10px #FFFFFF;\n   box-shadow:         inset 0 0 10px #FFFFFF;\n   transition-duration: .3s;\n}\n\n#video-background {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n  width: auto;\n  height: auto;\n  z-index: -100;\n}\n\nfooter{\n\tcolor: white;\n\twidth: 100%;\n\tbottom: 0%;\n\tposition: absolute;\n\ttext-align: center;\n}\n", ""]);
 
 // exports
 
@@ -18945,67 +19026,6 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(2);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(14);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Navbar = function (_Component) {
-    _inherits(Navbar, _Component);
-
-    function Navbar() {
-        _classCallCheck(this, Navbar);
-
-        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
-    }
-
-    _createClass(Navbar, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: 'navbar navbar-fixed-top' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'navbar-brand' },
-                    'NasaSuits'
-                ),
-                _react2.default.createElement(
-                    'button',
-                    { className: 'navbar-btn btn-default btn' },
-                    'Team'
-                )
-            );
-        }
-    }]);
-
-    return Navbar;
-}(_react.Component);
-
-exports.default = Navbar;
 
 /***/ })
 /******/ ]);

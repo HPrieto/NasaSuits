@@ -1,3 +1,121 @@
 body {
     color: white;
 }
+
+body{
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'NasalizationRg-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NasalizationRg-Regular'), url('/fonts/nasalization rg.woff') format('woff');
+}
+
+#nav{
+  padding-top: 15px;
+  width:100%;
+  text-align:center;
+  height: 65px;
+
+ /*background gradient*/
+ background:rgba(0,0,0,.7);
+ background: -moz-linear-gradient(top, rgba(0,0,0,0.40) 4%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top, rgba(0,0,0,0.40) 4%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom, rgba(0,0,0,0.40) 4%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+#nav span a{
+  font-family: "Work Sans";
+  font-weight: 300;
+  color: #FFFFFF;
+  text-decoration:none;
+  font-size: 20px;
+  margin: 10px;
+  padding-bottom: 5px;
+  transition-duration: .3s;
+}
+
+#nav span .link-active{
+  color: #df462a;
+  -webkit-box-shadow: 0 8px 6px -7px #df462a;
+  -moz-box-shadow: 0 8px 6px -7px #df462a;
+  box-shadow: 0 8px 6px -7px #df462a;
+  border-radius: 8px;
+}
+
+#nav span a:hover:not(.link-active){
+    -webkit-box-shadow: 0 8px 6px -7px #FFFFFF;
+    -moz-box-shadow: 0 8px 6px -7px #FFFFFF;
+    box-shadow: 0 8px 6px -7px #FFFFFF;
+    border-radius: 8px;
+    transition-duration: .3s;
+}
+
+#jumbotron{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 13%;
+}
+
+#jumbotron-header{
+  font-family: "NasalizationRg-Regular";
+  font-size: 100px;
+  color: #df462a;
+  text-shadow: 2px 2px .8px rgba(0, 0, 0, 0.33);
+  line-height: 10px;
+  margin-bottom: 55px;
+}
+
+#jumbotron-subtext{
+  font-family: "Work Sans";
+  font-size: 38px;
+  font-weight: 200;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.73);
+  margin: 0;
+}
+
+button{
+  font-family: 'Work Sans';
+  font-weight: bold;
+  font-size: 18px;
+  color: #CECECE;
+  padding: 13px;
+  margin-top: 18px;
+  background-color: rgba(77, 77, 77, 0.36);
+  border: none;
+  border-radius: 7px;
+  transition-duration: .3s;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover{
+  color: #F3F3F3;
+  -moz-box-shadow:    inset 0 0 10px #FFFFFF;
+   -webkit-box-shadow: inset 0 0 10px #FFFFFF;
+   box-shadow:         inset 0 0 10px #FFFFFF;
+   transition-duration: .3s;
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+footer{
+	color: white;
+	width: 100%;
+	bottom: 0%;
+	position: absolute;
+	text-align: center;
+}

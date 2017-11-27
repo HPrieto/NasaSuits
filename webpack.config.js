@@ -28,7 +28,10 @@ module.exports = {
             test: /\.(png|jp(e*)g|svg)$/,
             use: [{
                 loader: 'url-loader'
-            }]
+            }, {
+		      test: /\.mp4$/,
+		      loader: 'url?limit=10000&mimetype=video/mp4'
+		  }]
         }
 		]
 	}
