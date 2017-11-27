@@ -1021,12 +1021,7 @@ var App = function (_Component) {
                 'div',
                 null,
                 _react2.default.createElement(_Navbar2.default, null),
-                _react2.default.createElement(_Home2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    'hello'
-                )
+                _react2.default.createElement(_Home2.default, null)
             );
         }
     }]);
