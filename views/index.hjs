@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nasa Suits RCC</title>
+	<!-- Tab icon -->
+	<link rel="icon" href="lawyer_tab.png">
+	<meta charset="utf-8">
+	<!-- Mobile Phone Layout meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Navbar Hamburger Animation CDN -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
+    <!-- inline CSS -->
+    <style type="text/css" media="screen">
+        body {
+          background-color: black;
+        }
+        html {
+		    -ms-text-size-adjust: 100%;
+		    -webkit-text-size-adjust: 100%
+		}
+    </style>
+</head>
+<body>
+	<!-- React Code Starting div -->
+	<div id='root'></div>
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- webpack optimized package -->
+    <script type='text/javascript' src='/build/bundle.js'></script>
+	<!-- Bootstrap CDN -->
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+</body>
+</html>
